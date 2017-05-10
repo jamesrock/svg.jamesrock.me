@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>svg</title>
+	<link rel="stylesheet" type="text/css" href="/css/screen.css">
+</head>
+<body>
+	<script src="/js/svg.js"></script>
+	<script>
+	(function() {
+
+		var
+		svgRoot = svg.create.stage({"width":"300", "height": "350", "style":"background-color:#FFF"}),
+		textBox = svg.create.textBox("James Rock", 200, 20, 10, 50, "#FFFFFF", "#000000", 1, 3);
+
+		svg.appendTo([textBox], svgRoot);
+
+		document.body.appendChild(svgRoot);
+
+	})();
+	</script>
+</body>
+</html>
